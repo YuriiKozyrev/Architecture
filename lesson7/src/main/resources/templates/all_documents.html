@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>MVC Example</title>
+</head>
+
+<body>
+<h1>Documents list:</h1>
+<table>
+    <thead>
+    <tr>
+        <td>Id</td>
+        <td>Type</td>
+        <td>Quantity</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="d : ${documents}">
+        <td th:text="${d.id}"></td>
+        <td th:text="${d.type}"></td>
+        <td th:text="${d.quantity}"></td>
+    </tr>
+    </tbody>
+</table>
+<a th:href="@{/}">Main page</a>
+</body>
+</html>
