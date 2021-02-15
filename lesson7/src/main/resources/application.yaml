@@ -1,0 +1,5 @@
+server:
+  port: 8189
+
+thymeleaf:
+  encoding: UTF-8
